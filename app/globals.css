@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --width-348: 348px;
+  --text-xxxl: 32px;
+  /* --max-600: 600px; */
+  --color-gray-50: #262626;
+  --color-gray-100: #333;
+  --color-gray-200: #404040;
+  --color-gray-300: #525252;
+  --color-gray-600: #a3a3a3;
+  --color-gray-700: #d4d4d4;
+  --color-gray-800: #e5e5e5;
+  --color-gray-1k: #fafafa;
+  --color-gray-00: #171717;
+  --color-gray-25: #1e1e1e;
+  --color-green-200: #00aa45;
+  --color-green-300: #00aa45;
+  --color-green-400: #219653;
+  --color-green-500: #1e874b;
+  --color-green-600: #006f00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --border: #333;
+    --gray-00: #171717;
+    --gray-200: #404040;
+    --gray-300: #525252;
+    --gray-500: #8a8a8a;
+    --gray-1k: #fafafa;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bg-gray-00 {
+  background-color: var(--gray-00);
+}
+
+.border-primaryBorder {
+  border-color: var(--border);
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.text-gray {
+  color: var(--gray-500);
+}
+.leading-145 {
+  line-height: 145%;
+}
+.text-gray-1k {
+  color: var(--gray-1k);
+}
+/* .text-xxs {
+  font-size: 10px;
+} */
+.paragraph-clamp,
+.paragraph-clamp1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.paragraph-clamp1 {
+  -webkit-line-clamp: 1;
+}
+
+/* articles */
+
+.max-w-640 {
+  max-width: 640px;
+}
+.peerlist-blog p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.job-description p,
+.peerlist-blog p {
+  padding-bottom: 0;
+  color: rgb(var(--gray-1k));
+}
+
+/* scroll  */
+.bg-clip-padding {
+  background-clip: padding-box;
+}
+.dark .circle-gradient-vars {
+  --primary-gradient: 83, 193, 121;
+}
+
+.circle-gradient {
+  --gradient-position-x: 30%;
+  --circle-size: 300px;
+  background: radial-gradient(
+    var(--circle-size) circle at var(--gradient-position-x),
+    rgb(var(--primary-gradient)) 10%,
+    var(--gray-200) 23%
+  );
+  transition: var(--background) 0.2s ease-in-out;
+}
+
+/* job individual  */
+
+.job-description p {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.job-description p,
+.peerlist-blog p {
+  padding-bottom: 0;
+  color: rgb(var(--gray-1k));
+}
