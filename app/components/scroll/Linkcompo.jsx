@@ -1,20 +1,16 @@
-"use client";
-import { useRouter } from "next/navigation";
 import React from "react";
 
-const IndivPost = ({ id }) => {
-  const router = useRouter();
+const Linkcompo = () => {
   return (
     <div
-      data-index={1}
-      data-known-size={151}
-      data-item-index={1}
+      data-index={7}
+      data-known-size={376}
+      data-item-index={7}
       style={{ overflowAnchor: "none" }}
     >
       <div>
         <article
           role="none"
-          onClick={() => router.push(`/scroll/post/${id}`)}
           className="bg-gray-00 px-4 mob:px-6 py-4 border-b border-primaryBorder hover:bg-gray-25 cursor-pointer group/post-card"
         >
           <div />
@@ -22,7 +18,7 @@ const IndivPost = ({ id }) => {
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center">
                 <span className="max-w-fit ">
-                  <a className="flex items-center" href="/danishfareed">
+                  <a className="flex items-center" href="/mike_andreuzza">
                     <div className="w-10 h-10 relative">
                       <div className="w-10 h-10 relative">
                         <svg
@@ -78,8 +74,8 @@ const IndivPost = ({ id }) => {
                         <div className="w-10 h-10 rounded-full overflow-hidden ">
                           <img
                             className="w-10 h-10 rounded-full bg-center bg-no-repeat bg-cover flex justify-center items-center object-cover hover:opacity-90 transition-opacity border-1  rounded-full bg-gray-00"
-                            src="https://lh3.googleusercontent.com/a/ACg8ocLhQhv7qL2tU8HpB6shZZeLJUqYiFIqdG3DoKOXDyd9X_7UHbu4=s96-c"
-                            alt="Danish Fareed"
+                            src="https://lh3.googleusercontent.com/a/ACg8ocLfKvTlrdhVWDL26w7bHkNtag3CUCDL3-HaPs10OLHqJ6KPcgZp5A=s96-c"
+                            alt="Michael Andreuzza"
                             width={40}
                             height={40}
                           />
@@ -92,120 +88,26 @@ const IndivPost = ({ id }) => {
                   <div className="flex flex-wrap items-center whitespace-nowrap gap-2">
                     <span className="max-w-fit ">
                       <div className="flex items-center gap-1">
-                        <a className="flex items-center" href="/danishfareed">
+                        <a className="flex items-center" href="/mike_andreuzza">
                           <h3 className="text-sm text-gray-1k font-semibold capitalize hover:underline transition">
-                            Danish Fareed
+                            Michael Andreuzza
                           </h3>
                         </a>
                       </div>
                     </span>
-                    <div role="none">
-                      <div className="relative z-0">
-                        <button
-                          small=""
-                          id="follow-profile"
-                          className="text-blue-400 text-xs hover:underline font-bold"
-                        >
-                          Follow
-                        </button>
-                      </div>
-                    </div>
                   </div>
                   <div className="text-gray-500 text-xs leading-4">
                     <div className="flex items-center flex-wrap">
-                      <a href="/danishfareed">
-                        <span>@danishfareed</span>
+                      <a href="/mike_andreuzza">
+                        <span>@mike_andreuzza</span>
                       </a>
                       &nbsp;•&nbsp;
                       <span className="inline-flex items-center">
-                        <a className="hover:underline" href="/scroll/thought">
-                          #thought
+                        <a className="hover:underline" href="/scroll/show">
+                          #show
                         </a>{" "}
                       </span>
-                      &nbsp;•&nbsp;<span>8m </span>
-                      <span className="text-gray-700 flex items-center text-xs">
-                        &nbsp;•&nbsp;
-                        <button
-                          data-tip="true"
-                          data-for="from-mobile-app"
-                          data-effect="solid"
-                          type="button"
-                          currentitem="false"
-                        >
-                          <svg
-                            width={16}
-                            height={16}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5 9c0-3.3 0-4.95 1.025-5.975C7.05 2 8.7 2 12 2s4.95 0 5.975 1.025C19 4.05 19 5.7 19 9v6c0 3.3 0 4.95-1.025 5.975C16.95 22 15.3 22 12 22s-4.95 0-5.975-1.025C5 19.95 5 18.3 5 15V9z"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              vectorEffect="non-scaling-stroke"
-                            />
-                            <path
-                              d="M11 19h2"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              vectorEffect="non-scaling-stroke"
-                            />
-                            <path
-                              d="M9 2l.089.534c.193 1.157.29 1.736.686 2.088C10.19 4.989 10.776 5 12 5c1.224 0 1.81-.01 2.225-.378.397-.352.493-.93.686-2.088L15 2"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinejoin="round"
-                              vectorEffect="non-scaling-stroke"
-                            />
-                          </svg>
-                          <span className="sr-only">From Mobile App</span>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div role="none">
-                <div role="none">
-                  <div
-                    id="dropdown-trigger-button"
-                    className="w-fit relative flex  "
-                  >
-                    <button
-                      type="button"
-                      id="radix-:r5s:"
-                      aria-haspopup="menu"
-                      aria-expanded="false"
-                      data-state="closed"
-                      className="outline-none absolute h-full w-full -z-10"
-                    />
-                    <div className="" role="button" tabIndex={0}>
-                      <button
-                        type="button"
-                        className=" justify-center shrink-0 flex items-center font-semibold border transition-all ease-in duration-75 whitespace-nowrap text-center select-none disabled:shadow-none disabled:opacity-50 disabled:cursor-not-allowed gap-x-1 active:shadow-none text-xs leading-4 py-1 h-6 rounded-lg w-6 text-gray-1k bg-gray-00 border-transparent hover:border-gray-200 disabled:bg-gray-100 disabled:hover:border-transparent dark:hover:bg-gray-200 dark:hover:border-gray-200 dark:disabled:bg-gray-100 dark:disabled:hover:bg-gray-100 dark:disabled:hover:border-gray-100 hover:shadow-10 dark:hover:shadow-15"
-                      >
-                        <svg
-                          width={14}
-                          height={14}
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.992 12h.009M11.984 18h.01M12 6h.009"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            vectorEffect="non-scaling-stroke"
-                          />
-                        </svg>
-                      </button>
+                      &nbsp;•&nbsp;<span>1h </span>
                     </div>
                   </div>
                 </div>
@@ -213,14 +115,76 @@ const IndivPost = ({ id }) => {
             </div>
           </div>
           <div className="ml-12">
+            <p className="text-gray-1k font-semibold text-sm mb-2 text-sm">
+              {" "}
+              How to create a dynamic feature grid with Astro &amp; Tailwind CSS{" "}
+            </p>
             <div>
               <div className="break-words text-gray-1k post-caption font-normal rich-text-paragraph-regular text-sm mb-2">
                 <p className="">
-                  Consistency beats motivation every time. You won’t always feel
-                  like showing up, but showing up is what makes the difference.
-                  Keep building.{" "}
+                  If you’re already familiar with Astro.js, let’s add some
+                  interactivity with Tailwind CSS. We’ll focus on the dynamic
+                  rendering of feature cards using an array. This method not
+                  only simplifies your code but also adds a layer of
+                  sophistication to your website.
+                </p>
+                <p className="">
+                  <strong>Read the full article</strong>
+                </p>
+                <p className="">
+                  <a
+                    href="https://lexingtonthemes.com/tutorials/how-to-create-a-dynamic-feature-grid-with-astrojs-and-tailwind-css/"
+                    rel="noreferrer nofollow ugc"
+                    target="_blank"
+                    className="text-green-500"
+                  >
+                    https://lexingtonthemes.com/tutorials/how-to-create-a-dynamic-feature-grid-with-astrojs-and-tailwind-css/
+                  </a>
                 </p>
               </div>
+            </div>
+            <div className="bg-gray-00 border border-primaryBorder overflow-hidden mb-2 transition-shadow ease-in-out duration-200 block  rounded-2xl hover:shadow-focus cursor-pointer">
+              <a
+                href="https://lexingtonthemes.com/tutorials/how-to-create-a-dynamic-feature-grid-with-astrojs-and-tailwind-css/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="p-0 mob:p-4">
+                  <div className="flex items-start flex-col-reverse w-full mob:flex-row mob:justify-between gap-0 mob:gap-4">
+                    <div className="px-4 py-2 mob:px-0 mob:py-0 mob:max-w-full">
+                      <p className="text-gray-1k font-medium text-sm overflow-clip paragraph-clamp1">
+                        How to create a dynamic feature grid with Astrojs and
+                        Tailwind CSS
+                      </p>
+                      <div className="hidden mob:block break-words">
+                        <p className="text-gray-500 dark:text-gray-600 font-normal text-xs paragraph-clamp mb-1">
+                          Learn how to create a dynamic feature grid with
+                          astrojs and tailwind css with Tailwind CSS.
+                        </p>
+                      </div>
+                      <div className="flex items-center text-xxs font-normal text-gray-500 mt-2 shrink-0">
+                        <div>
+                          <img
+                            src="https://icons.duckduckgo.com/ip2/lexingtonthemes.com.ico"
+                            width={14}
+                            height={14}
+                            alt="https://lexingtonthemes.com"
+                            className="w-3.5 h-3.5 mr-1 rounded-full bg-gray-200"
+                          />
+                        </div>
+                        <p className="text-gray-500 dark:text-gray-600 font-normal text-[10px] ">
+                          lexingtonthemes.com
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      src="https://www.lexingtonthemes.com/images/tutorials/simplifiedCards.gif"
+                      alt="How to create a dynamic feature grid with Astrojs and Tailwind CSS"
+                      className="w-full object-cover w-full mob:max-w-[30%] mob:w-[135px] mob:h-[72px] h-[148px] object-cover mob:rounded-lg border-b mob:border border-primaryBorder"
+                    />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div className="w-full pl-12">
@@ -232,12 +196,14 @@ const IndivPost = ({ id }) => {
                 <button
                   title="Comment"
                   type="button"
-                  className="flex items-center gap-0.5 text-xs group relative rounded-lg transition-colors duration-200 ease-in-out pr-2 pl-0.5 py-0.5 group-hover/post-card:bg-gray-00 "
+                  className="flex items-center gap-0.5 text-xs group relative rounded-lg transition-colors duration-200 ease-in-out pr-2 pl-0.5 py-0.5 group-hover/post-card:bg-gray-00"
+                  fdprocessedid="f5v3n"
                 >
                   <span className="group-hover:bg-blue-50 group-hover:!text-blue-400 text-gray-1k flex items-center justify-center rounded-lg h-6 w-6 ">
                     <div className="lf-player-container">
                       <div
                         id="lottie"
+                        className="group-hover/comment:!block hidden"
                         style={{
                           background: "transparent",
                           margin: "0px auto",
@@ -263,16 +229,16 @@ const IndivPost = ({ id }) => {
                           }}
                         >
                           <defs>
-                            <clipPath id="__lottie_element_1773">
+                            <clipPath id="__lottie_element_427">
                               <rect width={256} height={256} x={0} y={0} />
                             </clipPath>
-                            <clipPath id="__lottie_element_1775">
+                            <clipPath id="__lottie_element_429">
                               <path d="M0,0 L144,0 L144,144 L0,144z" />
                             </clipPath>
                           </defs>
-                          <g clipPath="url(#__lottie_element_1773)">
+                          <g clipPath="url(#__lottie_element_427)">
                             <g
-                              clipPath="url(#__lottie_element_1775)"
+                              clipPath="url(#__lottie_element_429)"
                               style={{ display: "block" }}
                               transform="matrix(1,0,0,1,56,56)"
                               opacity={1}
@@ -334,7 +300,7 @@ const IndivPost = ({ id }) => {
                         </svg>
                       </div>
                     </div>
-                    <span className="block">
+                    <span className="block group-hover/comment:hidden">
                       <svg
                         width={14}
                         height={14}
@@ -367,17 +333,24 @@ const IndivPost = ({ id }) => {
                   >
                     <button
                       type="button"
-                      id="radix-:r5u:"
+                      id="radix-:r1j:"
                       aria-haspopup="menu"
                       aria-expanded="false"
                       data-state="closed"
                       className="outline-none absolute h-full w-full -z-10"
+                      fdprocessedid="xvhqow"
                     />
-                    <div className="" role="button" tabIndex={0}>
+                    <div
+                      className=""
+                      role="button"
+                      tabIndex={0}
+                      fdprocessedid="kwlrl7"
+                    >
                       <button
                         title="Reshare or Repost"
                         type="button"
                         className="flex items-center gap-0.5 text-xs group relative rounded-lg transition-colors duration-200 ease-in-out pr-2 pl-0.5 py-0.5 group-hover/post-card:bg-gray-00 "
+                        fdprocessedid="p6sjhk"
                       >
                         <span className="group-hover:bg-orange-50 group-hover:text-orange transition-all text-gray-1k flex items-center justify-center rounded-lg h-6 w-6 ">
                           <span className="group-hover:animate-rotate-sync group-hover:rotate-[30deg] group-[:not(:hover)]:animate-rotate-back group-hover:text-orange transition-all ">
@@ -430,6 +403,7 @@ const IndivPost = ({ id }) => {
                   title="Upvote"
                   type="button"
                   className="flex items-center gap-0.5 text-xs group relative rounded-lg transition-colors duration-200 ease-in-out pr-2 pl-0.5 py-0.5 group-hover/post-card:bg-gray-00 "
+                  fdprocessedid="pbz7r"
                 >
                   <span className="group-hover:bg-green-00 group-hover:!text-green-300 text-gray-1k flex items-center justify-center rounded-lg h-6 w-6 ">
                     <div className="lf-player-container">
@@ -460,17 +434,17 @@ const IndivPost = ({ id }) => {
                           }}
                         >
                           <defs>
-                            <clipPath id="__lottie_element_1788">
+                            <clipPath id="__lottie_element_442">
                               <rect width={256} height={256} x={0} y={0} />
                             </clipPath>
-                            <clipPath id="__lottie_element_1802">
+                            <clipPath id="__lottie_element_456">
                               <path d="M0,0 L160,0 L160,160 L0,160z" />
                             </clipPath>
-                            <clipPath id="__lottie_element_1806">
+                            <clipPath id="__lottie_element_460">
                               <path d="M0,0 L160,0 L160,160 L0,160z" />
                             </clipPath>
                             <linearGradient
-                              id="__lottie_element_1812"
+                              id="__lottie_element_466"
                               spreadMethod="pad"
                               gradientUnits="userSpaceOnUse"
                             >
@@ -479,7 +453,7 @@ const IndivPost = ({ id }) => {
                               <stop />
                             </linearGradient>
                           </defs>
-                          <g clipPath="url(#__lottie_element_1788)">
+                          <g clipPath="url(#__lottie_element_442)">
                             <g
                               style={{ display: "block" }}
                               transform="matrix(1,0,0,1,120.5,121.5)"
@@ -559,7 +533,7 @@ const IndivPost = ({ id }) => {
                               </g>
                             </g>
                             <g
-                              clipPath="url(#__lottie_element_1802)"
+                              clipPath="url(#__lottie_element_456)"
                               style={{ display: "block" }}
                               transform="matrix(1,0,0,1,48,40)"
                               opacity={1}
@@ -583,7 +557,7 @@ const IndivPost = ({ id }) => {
                               </g>
                             </g>
                             <g
-                              clipPath="url(#__lottie_element_1806)"
+                              clipPath="url(#__lottie_element_460)"
                               style={{ display: "block" }}
                               transform="matrix(1,0,0,1,48,284)"
                               opacity={1}
@@ -626,7 +600,7 @@ const IndivPost = ({ id }) => {
                               }}
                             >
                               <g>
-                                <path fill="url(#__lottie_element_1812)" />
+                                <path fill="url(#__lottie_element_466)" />
                                 <path
                                   strokeLinecap="butt"
                                   strokeLinejoin="miter"
@@ -665,45 +639,20 @@ const IndivPost = ({ id }) => {
                   </span>
                   <span className="tabular-nums">
                     <number-flow-react
-                      aria-label={2}
+                      aria-label={10}
                       role="img"
-                      data='{"pre":[],"integer":[{"type":"integer","value":2,"key":"integer:0","pos":0}],"fraction":[],"post":[],"valueAsString":"2","value":2}'
+                      data='{"pre":[],"integer":[{"type":"integer","value":1,"key":"integer:1","pos":1},{"type":"integer","value":0,"key":"integer:0","pos":0}],"fraction":[],"post":[],"valueAsString":"10","value":10}'
                     />
                   </span>
                 </button>
               </div>
               <div className="flex gap-4 items-center">
-                <button
-                  title="Bookmark"
-                  type="button"
-                  className="flex items-center gap-0.5 text-xs group relative rounded-lg transition-colors duration-200 ease-in-out  group-hover/post-card:bg-gray-00 "
-                >
-                  <span className="group-hover:bg-cyan-light group-hover:shadow-none text-gray-1k flex items-center justify-center rounded-lg h-6 w-6 ">
-                    <span className="group-hover:-rotate-[10deg] group-hover:text-cyan transition-all duration-150">
-                      <svg
-                        width={14}
-                        height={14}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 17.9808V9.70753C4 6.07416 4 4.25748 5.17157 3.12874C6.34315 2 8.22876 2 12 2C15.7712 2 17.6569 2 18.8284 3.12874C20 4.25748 20 6.07416 20 9.70753V17.9808C20 20.2867 20 21.4396 19.2272 21.8523C17.7305 22.6514 14.9232 19.9852 13.59 19.1824C12.8168 18.7168 12.4302 18.484 12 18.484C11.5698 18.484 11.1832 18.7168 10.41 19.1824C9.0768 19.9852 6.26947 22.6514 4.77285 21.8523C4 21.4396 4 20.2867 4 17.9808Z"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          vectorEffect="non-scaling-stroke"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                </button>
                 <div className="hidden md:block">
                   <button
                     title="Screenshot"
                     type="button"
                     className="flex items-center gap-0.5 text-xs group relative rounded-lg transition-colors duration-200 ease-in-out  group-hover/post-card:bg-gray-00 "
+                    fdprocessedid="no1u"
                   >
                     <span className="group-hover:bg-red-00 group-hover:text-red text-gray-1k flex items-center justify-center rounded-lg h-6 w-6 ">
                       <svg
@@ -732,6 +681,54 @@ const IndivPost = ({ id }) => {
                     </span>
                   </button>
                 </div>
+                <div role="none">
+                  <div role="none">
+                    <div
+                      id="dropdown-trigger-button"
+                      className="w-fit relative flex  "
+                    >
+                      <button
+                        type="button"
+                        id="radix-:r1l:"
+                        aria-haspopup="menu"
+                        aria-expanded="false"
+                        data-state="closed"
+                        className="outline-none absolute h-full w-full -z-10"
+                        fdprocessedid="x1ngyf"
+                      />
+                      <div
+                        className=""
+                        role="button"
+                        tabIndex={0}
+                        fdprocessedid="qa9rma"
+                      >
+                        <button
+                          type="button"
+                          className=" justify-center shrink-0 flex items-center font-semibold border transition-all ease-in duration-75 whitespace-nowrap text-center select-none disabled:shadow-none disabled:opacity-50 disabled:cursor-not-allowed gap-x-1 active:shadow-none text-xs leading-4 py-1 h-6 rounded-lg w-6 text-gray-1k bg-gray-00 border-transparent hover:border-gray-200 disabled:bg-gray-100 disabled:hover:border-transparent dark:hover:bg-gray-200 dark:hover:border-gray-200 dark:disabled:bg-gray-100 dark:disabled:hover:bg-gray-100 dark:disabled:hover:border-gray-100 hover:shadow-10 dark:hover:shadow-15"
+                          fdprocessedid="kwjtdw"
+                        >
+                          <svg
+                            width={14}
+                            height={14}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.992 12h.009M11.984 18h.01M12 6h.009"
+                              fill="currentColor"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              vectorEffect="non-scaling-stroke"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -741,4 +738,4 @@ const IndivPost = ({ id }) => {
   );
 };
 
-export default IndivPost;
+export default Linkcompo;

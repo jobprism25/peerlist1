@@ -90,7 +90,7 @@ const Sidebarweb = () => {
                 </span>
               </span>
             </Link>
-            <a
+            <Link
               className="flex lg:flex-row flex-col items-center group  pt-2 lg:py-2.5"
               href="/launchpad/2025/week/10"
             >
@@ -134,8 +134,8 @@ const Sidebarweb = () => {
                   Launchpad
                 </span>
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex lg:flex-row flex-col items-center group border-t-2 border-green lg:border-0 pt-2 lg:py-2.5"
               href="/articles"
             >
@@ -197,8 +197,8 @@ const Sidebarweb = () => {
                   Articles
                 </span>
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex lg:flex-row flex-col items-center group  pt-2 lg:py-2.5"
               href="/jobs"
             >
@@ -249,8 +249,8 @@ const Sidebarweb = () => {
                   Jobs
                 </span>
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex lg:flex-row flex-col items-center group  pt-2 lg:py-2.5"
               href="/search"
             >
@@ -288,8 +288,8 @@ const Sidebarweb = () => {
                   Search
                 </span>
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex lg:flex-row flex-col items-center group  pt-2 lg:py-2.5"
               href="/blog"
             >
@@ -334,7 +334,7 @@ const Sidebarweb = () => {
                   Blog
                 </span>
               </span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col justify-start">

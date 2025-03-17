@@ -2,16 +2,18 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebarweb from "./components/Sidebarweb";
 import Toprightbar from "./components/Toprightbar";
-
+import DarkCOmp from "./components/DarkCOmp";
+import { ThemeProvider } from "next-themes";
+import AsideCompo from "./components/AsideCompo";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,22 +21,26 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // console.log(document.getElementsByName(html));
+
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="bg-gray-00 w-full __className_82acca __variable_ea5f4b __variable_0f6017">
-          <div className="lg:pl-6 xl:pl-0">
-            <div className="lg:w-[1200px] w-full min-h-screen mx-auto flex font-body">
-              <Sidebarweb />
-              <div className="w-full lg:pl-[212px] lg:border-r border-primaryBorder">
-                <Toprightbar />
-                {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable}   antialiased`}>
+        {/* <DarkCOmp /> */}
+        <ThemeProvider attribute="class">
+          <div className="bg-gray-00 w-full font-sans">
+            <div className="lg:pl-6 xl:pl-0">
+              <div className="lg:w-[1200px] w-full min-h-screen mx-auto flex font-body">
+                <Sidebarweb />
+                <div className="w-full lg:pl-[212px] lg:border-r border-primaryBorder">
+                  <Toprightbar />
+                  {children}
+                  <AsideCompo />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

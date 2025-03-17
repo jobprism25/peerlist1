@@ -20,7 +20,7 @@ const articles = [
 
 const ShortArticle = () => {
   return (
-    <div className="relative hover:!bg-gray-25 transition-all bg-gray-00 group">
+    <div className="relative hover:!bg-gray-25  transition-all bg-gray-00 group">
       {articles.map((article) => (
         <Link
           key={article.id}
