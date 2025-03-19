@@ -78,9 +78,12 @@
   --color-gray-200: rgb(var(--gray-200));
   --color-green: #00aa45;
   --color-green-00: #e3f5ea;
+  --color-green-200: #52c078;
   --color-green-300: #00aa45;
+
   --color-gray-00: initial;
   --color-gray-00: rgb(var(--gray-00));
+  --color-gray-50: rgb(var(--gray-50));
   --color-gray-100: rgb(var(--gray-100));
   --color-gray-300: rgb(var(--gray-300));
   --color-gray-500: #8a8a8a;
@@ -138,6 +141,18 @@
   @apply text-[rgb(var(--gray-700))];
 }
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgb(var(--gray-200));
+}
+.border-transparent {
+  border-color: transparent !important;
+}
+
 ::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
@@ -174,9 +189,7 @@ strong {
 .leading-145 {
   line-height: 145%;
 }
-.text-gray-1k {
-  color: rgb(var(--gray-1k));
-}
+
 /* .text-xxs {
   font-size: 10px;
 } */
@@ -223,7 +236,7 @@ strong {
     rgb(var(--primary-gradient)) 10%,
     rgb(var(--gray-200)) 23%
   );
-  transition: var(--background) 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 #comment-body a,
 #message-body a,
@@ -260,4 +273,8 @@ strong {
 .peerlist-blog p {
   padding-bottom: 0;
   color: rgb(var(--gray-1k));
+}
+
+li > ul {
+  padding-bottom: 10px;
 }

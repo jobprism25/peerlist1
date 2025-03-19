@@ -11,14 +11,15 @@ const page = () => {
   const [radius, setRadius] = useState(250);
   const handleMouseenter = (event) => {
     const rect = cntainerRef.current.getBoundingClientRect();
-    setPosition(((event.clientX - rect.left) / 180) * 100);
-    setRadius(((event.clientX - rect.left) / 360) * 100);
+    setPosition(((event.clientX - rect.left) / 180) * 35);
+    setRadius(250 + (event.clientX - rect.left) * 2);
   };
+  // const animateTransition = () => {};
   const handleMouseLeave = () => {
     setPosition(10);
     setRadius(250);
   };
-  console.log(position, radius);
+  // console.log(position, radius);
 
   return (
     <div className="lg:w-[640px] w-full h-full pb-20  pt-14">
@@ -37,7 +38,7 @@ const page = () => {
             className="flex rounded-xl relative bg-clip-padding"
           >
             <a
-              className="px-4 py-2 uppercase bg-clip-padding bg-gray-00 rounded-l-xl border border-transparent flex items-center"
+              className="px-4 py-2 uppercase bg-clip-padding bg-gray-00 rounded-l-xl !border border-transparent flex items-center"
               href="/scroll"
             >
               <p className="text-green-300 dark:text-green-200 font-semibold text-xs">
@@ -45,7 +46,7 @@ const page = () => {
               </p>
             </a>
             <a
-              className="px-4 uppercase flex gap-2 items-center bg-clip-padding bg-gray-00 border-y border-transparent border-r rounded-r-xl"
+              className="px-4 uppercase flex gap-2 items-center bg-clip-padding bg-gray-00 !border-y border-transparent !border-r rounded-r-xl"
               href="/scroll/trending"
             >
               <p className="text-gray-1k font-semibold text-xs">Trending</p>
